@@ -35,8 +35,10 @@ import android.os.UserHandle;
 import android.util.Log;
 
 import org.lineageos.settings.R;
-import org.lineageos.settings.utils.FileUtils;
+import java.util.List;
 
+import org.lineageos.settings.utils.FileUtils;
+import vendor.xiaomi.hardware.displayfeature.V1_0.IDisplayFeature;
 import vendor.xiaomi.hardware.motor.V1_0.IMotor;
 
 public class PopupCameraService extends Service implements Handler.Callback {
