@@ -32,7 +32,8 @@
             android:defaultValue="false"
             android:key="gesture_pick_up"
             android:summary="@string/pick_up_gesture_summary"
-            android:title="@string/pick_up_gesture_title" />
+            android:title="@string/pick_up_gesture_title"
+            android:icon="@drawable/ic_pickup" />
 
     </PreferenceCategory>
 
@@ -44,13 +45,27 @@
             android:defaultValue="false"
             android:key="gesture_hand_wave"
             android:summary="@string/hand_wave_gesture_summary"
-            android:title="@string/hand_wave_gesture_title" />
+            android:title="@string/hand_wave_gesture_title"
+            android:icon="@drawable/ic_hand" />
 
         <SwitchPreference
-            android:defaultValue="false"
             android:key="gesture_pocket"
+            android:defaultValue="false"
+            android:title="@string/pocket_gesture_title"
             android:summary="@string/pocket_gesture_summary"
-            android:title="@string/pocket_gesture_title" />
+            android:icon="@drawable/ic_pocket" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="dc_dimming"
+        android:title="@string/dc_dimming_title">
+
+        <SwitchPreference
+            android:key="dc_dimming_enable"
+            android:defaultValue="false"
+            android:title="@string/dc_dimming_enable_title"
+            android:summary="@string/dc_dimming_enable_summary" />
 
     </PreferenceCategory>
 
