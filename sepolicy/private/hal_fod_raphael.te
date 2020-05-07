@@ -21,3 +21,11 @@ hal_client_domain(hal_fod_raphael, hal_fingerprint)
 
 # Allow to use wakelock
 wakelock_use(hal_fod_raphael)
+
+# Allow binder communication with hal_fingerprint
+binder_call(hal_fod_raphael, hal_fingerprint)
+
+allow hal_fod_raphael sysfs_graphics:dir search;
+allow hal_fod_raphael sysfs_graphics:file {getattr open read};
+allow hal_fod_raphael sysfs_tp_fodstatus:file { getattr open write };
+allow hal_fod_raphael sysfs:file {getattr};
